@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    font-family: 'Pretendard-Regular';
+    margin: 0;
+    color: white;
+}
+#partition{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+#left{
+    padding: 0px;
+    background-color: gray;
+}
+#right{
+    background-color: black;
+}
+/*
+@media(min-width:900px){
+    #left{
+    display: none;
+}
+*/
+a {
+    color:black;
+    text-decoration-line: none;
+}
+#pagesName{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#profilePhoto{
+    text-align: center;
+    padding-bottom: 50px;
+}
+#category{
+    text-align: left;
+    padding-left: 90px;
+}
+#postName{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+#postMain{
+    padding-left: 30px;
+}
