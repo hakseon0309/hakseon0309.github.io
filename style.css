@@ -5,6 +5,15 @@
     font-style: normal;
 }
 
+@media (min-width: 1000px){
+    .postBox{
+        width: 760px;
+    }
+    .postBoxName{
+        width: 760px;
+    }
+}
+
 body{
     font-family: 'Pretendard-Regular';
     margin: 0;
@@ -58,16 +67,24 @@ body{
 }
 
 .post{
-    text-align: left;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
     margin-left: 10px;
 }
 
-a {
+a{
     text-decoration-line: none;
 }
+
+p{
+    text-align: left;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 #pagesName{
     text-align: center;
     padding-top: 50px;
