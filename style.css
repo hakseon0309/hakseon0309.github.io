@@ -33,6 +33,11 @@ body{
     height: 1000px;
 }
 
+a{
+    color: white;
+    text-decoration-line: none;
+}
+
 .right{
     background-color: black;
     height: 1000px;
@@ -72,11 +77,6 @@ body{
     margin-right: 10px;
     margin-left: 10px;
 }
-
-a{
-    text-decoration: none;
-}
-
 p{
     text-align: left;
     font-size: 15px;
