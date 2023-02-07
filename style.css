@@ -4,37 +4,67 @@
     font-weight: 400;
     font-style: normal;
 }
+
 body{
     font-family: 'Pretendard-Regular';
     margin: 0;
     color: white;
 }
+
 .container{
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 200px 1fr;
+    align-content: center;
 }
+
 .left{
     padding: 0px;
     background-color: gray;
+    width: 200px;
+    height: 1000px;
 }
+
 .right{
     background-color: black;
+    height: 1000px;
 }
+
 .intro{
     text-align: left;
-    padding-left: 90px;
+    padding-left: 60px;
+    padding-bottom: 30px;
 }
+
 .category{
     text-align: left;
-    padding-left: 90px;
+    padding-left: 25px;
     line-height: 30px;
 }
-/*
-@media(min-width:900px){
-    #left{
-    display: none;
+
+.postBoxName{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 20px;
 }
-*/
+
+.postBox{
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    height: 300px;
+}
+
+.post{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 a {
     text-decoration-line: none;
 }
