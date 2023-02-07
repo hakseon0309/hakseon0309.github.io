@@ -74,7 +74,7 @@ body{
 }
 
 a{
-    text-decoration-line: none;
+    text-decoration: none;
 }
 
 p{
@@ -83,6 +83,19 @@ p{
     line-height: 20px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+#profileName{
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+#profilePost{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 11px;
+    
 }
 
 #pagesName{
