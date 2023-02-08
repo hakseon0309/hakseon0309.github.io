@@ -14,10 +14,17 @@
     }
 }
 
+
+
 body{
     font-family: 'Pretendard-Regular';
-    margin: 0;
     color: white;
+}
+
+#wrapper{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 
 .container{
