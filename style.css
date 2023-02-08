@@ -15,29 +15,10 @@
 }
 
 
-
 body{
     font-family: 'Pretendard-Regular';
     color: white;
-}
-
-#wrapper{
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-}
-
-.container{
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    align-content: center;
-}
-
-.left{
-    padding: 0px;
-    background-color: gray;
-    width: 200px;
-    height: 1000px;
+    margin: 0;
 }
 
 a{
@@ -45,45 +26,6 @@ a{
     text-decoration-line: none;
 }
 
-.right{
-    background-color: black;
-    height: 1000px;
-}
-
-.intro{
-    text-align: left;
-    padding-left: 60px;
-    padding-bottom: 30px;
-}
-
-.category{
-    text-align: left;
-    padding-left: 25px;
-    line-height: 30px;
-}
-
-.postBoxName{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 20px;
-}
-
-.postBox{
-    margin-top: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border: 1px solid white;
-    height: 300px;
-}
-
-.post{
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
 p{
     text-align: left;
     font-size: 15px;
@@ -92,37 +34,71 @@ p{
     margin-right: 20px;
 }
 
-#profileName{
-    text-align: center;
-    margin-top: 100px;
-    
+#wrapper{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+#container{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-content: center;
 }
 
-#profilePost{
-    text-align: center;
-    margin-top: 100px;
-    font-size: 11px;
-    
+#containerLeft{
+    background-color: gray;
+    width: 200px;
+    height: 1000px;
 }
-
-#pagesName{
+#pageName{
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 50px;
+    font-size: 18px;
 }
 #profilePhoto{
     text-align: center;
-    padding-bottom: 50px;
+    padding-top: 50px;
 }
-#postName{
-    font-size: 30px;
-    padding-top: 30px;
-    padding-left: 30px;
+.small{
+    width: 100px;
 }
-#postMain{
-    padding-left: 30px;
+#profilePost{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 18px;
+}
+#otherPages{
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 60px;
+}
+#category{
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 70px;
+    line-height: 30px;
 }
 
-#categoryTag{
-    margin-left: 30px;
+#containerRight{
+    background-color: black;
+    height: 1000px;
+}
+.postName{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.postBox{
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    height: 300px;
+}
+.post{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }

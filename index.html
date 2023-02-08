@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>학선 개발 일지</title>
     <meta charset="utf-8">
@@ -11,66 +10,37 @@
     <base href="https://hakseon0309.github.io/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
-
 <body>
-<!-- 페이지 가운데 정렬 -->
 <div id="wrapper">
-
-    <!-- 파티션 -->
-    <div class="container">
-
-        <!-- 왼쪽 파티션 -->
-        <div class="left">
-
-            <div id="pagesName"><a href="https://hakseon0309.github.io/">학선 개발 일지</a></div>
-
-            <div id="profilePhoto"><img src="image/IMG_0236.JPG" width="100px"></div>
-
-            <div class="intro">
+    <div id="container">
+        <div id="containerLeft">
+            <div id="pageName"><a href="https://hakseon0309.github.io/">학선 개발 일지</a></div>
+            <div id="profilePhoto"><img class="small" src="image/IMG_0236.JPG"></div>
+            <div id="profilePost">Hakseon</div>
+            <div id="otherPages">
                 <i class="fa-solid fa-user"></i><a href="profile.html"> Profile</a><br>
                 <i class="fa-brands fa-github"></i><a href="https://github.com/hakseon0309"> Github</a><br>
                 <i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/@hakseonyoutube8566"> Youtube</a><br>
             </div>
-
-            <div class="category">
-                <details>
-                    <summary>HTML</summary>
-                    <div id="categoryTag"><a href="html_tag.html">tag</a></div>
-                </details>
-                <details>
-                    <summary>CSS</summary>
-                    <div>tag</div>
-                </details>
-                <details>
-                    <summary>Javascript</summary>
-                    <div>tag</div>
-                </details>
+            <div id="category">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>Javascript</div>
+                <div>C#</div>
             </div>
-
         </div>
-
-        <!-- 오른쪽 파티션 -->
-        <div class="right">
-
-            <!-- 글 제목 적는 곳 -->
-            <div class="postBoxName">
-                <h1 class="animated infinite slideInDown delay-2s">Example</h1>
+        <div id="containerRight">
+            <div class="postName">
+                <h1>제목</h1>
             </div>
-
             <article class="postBox">
-                <article>
-                    <!-- 글 내용 적는 곳 -->
-                    <p>이 깃허브 페이지는 여러 프로그래밍 언어를 배우고, 정리해두기 위해 만들었습니다.</p>               
+                <article class="post">
+                    <p>이 깃허브 페이지는 여러 프로그래밍 언어를 배우고, 정리해두기 위해 만들었습니다.</p>
+                                   
                  </article>
-                </article>
-
-                <img src="https://w.namu.la/s/216d0bdf317e1d49c85f5fa99a59a8d30a27dc78745de98b4cc0cb082a8f7023b9cf594ca46645ff9495ac4ef0a7acec60910158ecaf58a7d1569ba3c6c32f647720a6360bd09d8c9e63f6dbb6cef9124888b156355dd2f6fc6a778276655b85">
-
-                <p><script src="js.js"></script></p>
             </article>
-
         </div>
-</div>
+    </div>
 </div>
 </body>
 </html>
