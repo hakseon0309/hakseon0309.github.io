@@ -113,3 +113,37 @@ p {
     margin-right: 10px;
     margin-left: 10px;
 }
+
+.prompt {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .prompt p {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  .prompt p.selected {
+    background-color: yellow;
+    font-weight: bold;
+  }
+  .result {
+    text-align: center;
+  }
+  .result ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .result li {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+  .result h2 {
+    margin-top: 0;
+  }
+  #copy-btn {
+    margin-top: 10px;
+  }
