@@ -60,8 +60,7 @@ body {
 #sidebar #links {
   margin: 0px 0px 0px 60px;
 }
-#sidebar #category {
-}
+
 #sidebar #category .name {
   margin: 30px 0px 0px 10px;
 }
@@ -88,4 +87,5 @@ body {
 }
 #main .post .content {
   margin-left: 30px;
+  line-height: 30px;
 }
