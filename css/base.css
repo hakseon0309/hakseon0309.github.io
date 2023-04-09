@@ -28,10 +28,11 @@ a:hover {
 
 body {
   background-color: black;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 #container {
-  border: 3px solid gray;
+
   background-color: black;
   display: grid;
   grid-template-columns: 200px 800px;
@@ -41,15 +42,28 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 #sidebar {
-  background-color: black;
-  border-right: 3px solid gray;
+  margin-top: 10px;
+  background-color: rgb(50, 50, 50);
+  border-radius: 10px;
 }
-#sidebar #name {
+
+#sidebar #pagesName {
   font-size: 20px;
   text-align: center;
   margin: 30px;
 }
+
+#sidebar #profile {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#sidebar #profile #guildName {
+  line-height: 15px;
+  margin-top: 10px;
+}
+
 #sidebar #photo {
   text-align: center;
 }
@@ -72,8 +86,13 @@ body {
   line-height: 20px;
 }
 
+
+
 #main {
-  background-color: black;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: rgb(50, 50, 50);
 }
 #main .post {
   margin-top: 30px;
