@@ -4,7 +4,7 @@
     --custom-color-side : #2b2d31;
     --custom-color-main : #313338;
     --custom-color-font : white;
-    --custom-color-sub : rgb(167, 167, 167);
+    --custom-color-sub : rgba(167, 167, 167, 0.503);
     --custom-color-clear : rgba(0, 0, 0, 0);
 
     /* WOW Color List */
@@ -25,34 +25,46 @@
     /* Header */
     --custom-height-header : 25px;
 
+    /* Main Title */
+    --custom-height-title : 50px;
+
 }
 
 /* Global */
-header {
-    margin: 0px;
-    padding: 0px;
-}
-
 body {
     background: --custom-color-main;
     background-color: --custom-color-main;
     color : var(--custom-color-font);
 }
-
-img {
-    object-fit: cover;
+hr {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
 }
 
 /* 컨테이너 */
-
+.container-fluid {
+    padding: 0px;
+    margin: 0px;
+}
+.row {
+    padding: 0px;
+    margin: 0px;
+}
+.col-auto {
+    padding: 0px;
+    margin: 0px;
+}
 
 /* 첫번째 줄 */
 .-header {
     background-color: var(--custom-color-bg);
     height: var(--custom-height-header);
     line-height: var(--custom-height-header);
-    margin: 0px;
-    padding: 0px;
+    padding-left: 6px;
+    color: var(--custom-color-sub);
+    font-size: 14px;
+    font-weight: bold;
 }
 
 /* 두번째 줄부터 */
@@ -63,10 +75,12 @@ img {
 /* 가장 왼쪽에 위치한 캐릭터 리스트 */
 .--characterList {
     width: 75px;
+    padding: 0px;
 }
 .--characterList img {
     border-radius: 25%;
     padding-top: 10px;
+    padding-right: 1px;
 }
 
 /* 두번째 열 */
@@ -74,7 +88,16 @@ img {
     background-color: var(--custom-color-side);
     width: 200px;
     font-size: 14px;
+    overflow: hidden;
 }
+.banner {
+
+}
+.banner img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .profile img {
     border-radius: 25%;
 }
@@ -97,9 +120,26 @@ img {
 /* 세번째 열  */
 .--main {
     background-color: var(--custom-color-main);
-    padding-top: 20px;
-    padding-left: 30px;
     object-fit: cover;
     background-size: cover;
     overflow-x: hidden;
+}
+.--main .title {
+    height: var(--custom-height-title);
+    line-height: var(--custom-height-title);
+    padding-left: 20px;
+    border-bottom: solid 1px black;
+}
+
+.post {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.post img {
+    max-width: 500px;
+}
+
+.post p {
+    max-width: 500px;
 }
