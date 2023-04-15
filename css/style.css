@@ -1,132 +1,105 @@
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
-ins{background-color:#ff9;color:#000;text-decoration:none}
-mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
+:root {
+    /* Main Color List */
+    --custom-color-bg : #1e1f22;
+    --custom-color-side : #2b2d31;
+    --custom-color-main : #313338;
+    --custom-color-font : white;
+    --custom-color-sub : rgb(167, 167, 167);
+    --custom-color-clear : rgba(0, 0, 0, 0);
+
+    /* WOW Color List */
+    --custom-color-warrior : #c79c6e;
+    --custom-color-paladin : #f58cba;
+    --custom-color-deathKnight : #c41f3b;
+    --custom-color-hunter : #abd473;
+    --custom-color-shaman : #0070de;
+    --custom-color-evoker : ##33937F;
+    --custom-color-rogue : #fff569;
+    --custom-color-druid : #ff7d0a;
+    --custom-color-monk : #00ff96;
+    --custom-color-demonHunter : #a330c9;
+    --custom-color-priest : #fffff;
+    --custom-color-mage : #69ccf0;
+    --custom-color-warlock : #9482c9;
+    
+    /* Header */
+    --custom-height-header : 25px;
+
+}
+
+/* Global */
+header {
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
-  background-color: rgb(30, 31, 34);
-  color: white;
+    background: --custom-color-main;
+    background-color: --custom-color-main;
+    color : var(--custom-color-font);
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 200px auto;
-  grid-template-rows: 50px 250px;
-  margin: 30px;
-  background-color: rgb(43, 45, 49);
-  border-radius: 10px;
+img {
+    object-fit: cover;
 }
 
-.pageTitle {
-  width: auto;
-  height: 50px;
-  border-bottom: 3px solid rgb(30, 31, 34);
-  border-right: 3px solid rgb(30, 31, 34);;
-}
-.pageTitle .name {
-  text-align: center;
-  line-height: 50px;
+/* 컨테이너 */
+
+
+/* 첫번째 줄 */
+.-header {
+    background-color: var(--custom-color-bg);
+    height: var(--custom-height-header);
+    line-height: var(--custom-height-header);
+    margin: 0px;
+    padding: 0px;
 }
 
-.postTitle {
-  width: auto;
-  height: 50px;
-  border-bottom: 3px solid rgb(30, 31, 34);
-}
-.postTitle .name {
-  margin-left: 18px;
-  line-height: 50px;
+/* 두번째 줄부터 */
+.-main {
+    min-height: 956px;
 }
 
-.profile {
-  height: 250px;
-  text-align: center;
-  border-right: 3px solid rgb(30, 31, 34);
-  border-bottom: 3px solid rgb(30, 31, 34);
+/* 가장 왼쪽에 위치한 캐릭터 리스트 */
+.--characterList {
+    width: 75px;
+}
+.--characterList img {
+    border-radius: 25%;
+    padding-top: 10px;
+}
 
+/* 두번째 열 */
+.--sideBar {
+    background-color: var(--custom-color-side);
+    width: 200px;
+    font-size: 14px;
 }
 .profile img {
-  width: 140px;
-  border-radius: 50%;
-  margin: 30px;
+    border-radius: 25%;
 }
-
-.postList {
-  border-bottom: 3px solid rgb(30, 31, 34);
+.profile .character {
+    font-weight: bold;
+    color: var(--custom-color-monk);
 }
-
-.category {
-  margin: 0px;
-  height: 700px;
-  border-right: 3px solid rgb(30, 31, 34);
-  grid-column: 1 / 2;
-  grid-row: 3/4;
+.profile .server {
+    font-size: 13px;
+    color: var(--custom-color-sub);
 }
-.category .large {
-  margin-top: 30px;
-  margin-left: 15px;
-}
-
-.category .middle {
-  margin-top: 10px;
-  margin-left: 30px;
-  font-size: 12px;
-}
-.category .small {
-  margin-top: 10px;
-  margin-left: 45px;
-  font-size: 12px;
-}
-
-.main {
-  height: auto;
-  grid-column: 2 / 3;
-  grid-row: 2 / 4;
-}
-.main .post {
-  margin-top: 30px;
-  margin-left: 30px;
+.list-group {
 
 }
-
-.heroic {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #000;
-  text-align: center;
-  line-height: 50px;
+.list-group-item {
+    background-color: var(--custom-color-clear);
+    color: var(--custom-color-font);
 }
 
-.mythic {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #000;
-}
-
-.tab {
-  display: flex;
-}
-
-.post .model img {
-  width: 300px;
-}
-.post .model iframe {
-  width: 300px;
-}
-.post .skill img {
-  width: 300px;
-}
-
-.post {
-  margin: 30px;
+/* 세번째 열  */
+.--main {
+    background-color: var(--custom-color-main);
+    padding-top: 20px;
+    padding-left: 30px;
+    object-fit: cover;
+    background-size: cover;
+    overflow-x: hidden;
 }
