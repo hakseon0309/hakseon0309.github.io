@@ -1,5 +1,5 @@
 :root {
-    /* Main Color List */
+    /* 메인 팔레트 */
     --custom-color-bg : #1e1f22;
     --custom-color-side : #2b2d31;
     --custom-color-main : #313338;
@@ -7,7 +7,7 @@
     --custom-color-sub : rgba(167, 167, 167, 0.503);
     --custom-color-clear : rgba(0, 0, 0, 0);
 
-    /* WOW Color List */
+    /* WOW 팔레트 */
     --custom-color-warrior : #c79c6e;
     --custom-color-paladin : #f58cba;
     --custom-color-deathKnight : #c41f3b;
@@ -22,6 +22,7 @@
     --custom-color-mage : #69ccf0;
     --custom-color-warlock : #9482c9;
     
+    /* 레이아웃 변수 */
     /* Header */
     --custom-height-header : 25px;
 
@@ -30,7 +31,7 @@
 
 }
 
-/* Global */
+/* 전역 태그 */
 body {
     background: --custom-color-main;
     background-color: --custom-color-main;
@@ -56,7 +57,7 @@ hr {
     margin: 0px;
 }
 
-/* 첫번째 줄 */
+/* 헤더 */
 .-header {
     background-color: var(--custom-color-bg);
     height: var(--custom-height-header);
@@ -67,12 +68,12 @@ hr {
     font-weight: bold;
 }
 
-/* 두번째 줄부터 */
+/* 메인 페이지 */
 .-main {
     min-height: 956px;
 }
 
-/* 가장 왼쪽에 위치한 캐릭터 리스트 */
+/* 1. 캐릭터 리스트 */
 .--characterList {
     width: 75px;
     padding: 0px;
@@ -83,7 +84,7 @@ hr {
     padding-right: 1px;
 }
 
-/* 두번째 열 */
+/* 2. 사이드 바 */
 .--sideBar {
     background-color: var(--custom-color-side);
     width: 200px;
@@ -117,29 +118,78 @@ hr {
     color: var(--custom-color-font);
 }
 
-/* 세번째 열  */
-.--main {
+/* 3. 메인  */
+.--post {
     background-color: var(--custom-color-main);
     object-fit: cover;
     background-size: cover;
     overflow-x: hidden;
 }
-.--main .title {
+.--post .title {
     height: var(--custom-height-title);
     line-height: var(--custom-height-title);
-    padding-left: 20px;
     border-bottom: solid 1px black;
+    padding-left: 20px;
 }
 
-.post {
-    padding-top: 30px;
-    padding-left: 30px;
-}
 
-.post img {
-    max-width: 500px;
-}
 
-.post p {
-    max-width: 500px;
+
+
+/* 메인 컨텐츠 */
+.content {
+    padding: 20px;
+    overflow: hidden;
+}
+.content .mainImg img {
+    padding-bottom: 20px;
+    max-width: 100%;
+}
+.nameBox {
+    height: var(--custom-height-title);
+    line-height: var(--custom-height-title);
+}
+.storyBox {
+
+}
+.summaryBox {
+
+}
+.npcAbilities {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #161616;
+    padding: 20px;
+    min-width: 500px;
+    min-height: 220px;
+    max-width: 750px;
+    max-height: 500px;
+    position: relative;
+}
+._md {
+    min-width: 450px;
+    min-height: 220px;
+    max-width: 700px;
+    max-height: 500px;
+    margin-left: 50px;
+}
+._sm {
+    min-width: 400px;
+    min-height: 220px;
+    max-width: 650px;
+    max-height: 500px;
+    margin-left: 100px;
+}
+.npcAbilities .icon {
+    border-radius: 15%;
+}
+.npcAbilities .gif {
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.npcAbilities .description {
+    padding-right: 220px;
 }
