@@ -1,5 +1,6 @@
 :root {
     /* 메인 팔레트 */
+    --custom-color-bbg : #151515;
     --custom-color-bg : #1e1f22;
     --custom-color-side : #2b2d31;
     --custom-color-main : #313338;
@@ -35,7 +36,7 @@
 
 /* 전역 태그 */
 body {
-    background: var(--custom-color-bg);
+    background: var(--custom-color-bbg);
     color : var(--custom-color-font);
 }
 hr {
@@ -86,13 +87,15 @@ hr {
 
 /* 1. 캐릭터 리스트 */
 .__characterList {
-    height: 100%;
+    background-color: var(--custom-color-bg);
+    height: 956px;
     width: 75px;
     padding: 0px;
     position: sticky;
     top: 25px;
     z-index: 999;
     padding-top: 10px;
+
 }
 .__characterList .img {
     text-align: center;
@@ -172,9 +175,17 @@ hr {
     padding-bottom: 20px;
     max-width: 100%;
 }
-.mainName {
-    font-size: 30px;
+.enemyOutline {
+    border: 1px solid #000;
+    border-radius: 15px;
+    background-color: #1e1f22;
+    padding: 20px;
 }
+.enemyOutline .name {
+    font-size: 24px;
+}
+
+
 .nameBox {
     height: var(--custom-height-title);
     line-height: var(--custom-height-title);
