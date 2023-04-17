@@ -25,6 +25,8 @@
     /* 레이아웃 변수 */
     /* Header */
     --custom-height-header : 25px;
+    --custom-max-width : 960px;
+    --custom-min-width : 500px;
 
     /* Main Title */
     --custom-height-title : 50px;
@@ -33,8 +35,7 @@
 
 /* 전역 태그 */
 body {
-    background: --custom-color-main;
-    background-color: --custom-color-main;
+    background: var(--custom-color-bg);
     color : var(--custom-color-font);
 }
 hr {
@@ -45,9 +46,10 @@ hr {
 
 /* 컨테이너 */
 .container-fluid {
+    max-width: 956px;
+    min-height: 956px;
     padding: 0px;
     margin: 0px;
-    position: relative;
 }
 .row {
     padding: 0px;
@@ -59,47 +61,58 @@ hr {
 }
 
 /* 헤더 */
-.-header {
+._header {
     background-color: var(--custom-color-bg);
     height: var(--custom-height-header);
     line-height: var(--custom-height-header);
-    padding-left: 6px;
+    width: 100%;
+
     color: var(--custom-color-sub);
     font-size: 14px;
     font-weight: bold;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
+    
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    
+    padding-left: 7px;
 }
 
 /* 메인 페이지 */
-.-main {
+._main {
+    max-width: 956px;
     min-height: 956px;
 }
 
 /* 1. 캐릭터 리스트 */
-.--characterList {
+.__characterList {
+    height: 100%;
     width: 75px;
     padding: 0px;
-    position: fixed;
-    margin-top: 25px;
-}
-.--characterList img {
-    border-radius: 25%;
+    position: sticky;
+    top: 25px;
+    z-index: 999;
     padding-top: 10px;
-    padding-right: 1px;
+}
+.__characterList .img {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.__characterList img {
+    border-radius: 25%;
 }
 
 /* 2. 사이드 바 */
-.--sideBar {
+.__sideBar {
     background-color: var(--custom-color-side);
     width: 200px;
     font-size: 14px;
     overflow: hidden;
-    position: fixed;
-    margin-top: 25px;
-    margin-left: 75px;
+    position: sticky;
     min-height: 956px;
+    height: 50px;
+    position: sticky;
+    top: 25px;
 }
 .banner {
 
@@ -108,7 +121,6 @@ hr {
     max-width: 100%;
     max-height: 100%;
 }
-
 .profile img {
     border-radius: 25%;
 }
@@ -129,33 +141,39 @@ hr {
 }
 
 /* 3. 메인  */
-.--post {
+.__post {
     background-color: var(--custom-color-main);
     object-fit: cover;
-    background-size: cover;
+    /* background-size: cover; */
     overflow-x: hidden;
-    margin-left: 275px;
-    margin-top: 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-.--post .title {
+.__post .title {
     height: var(--custom-height-title);
     line-height: var(--custom-height-title);
     border-bottom: solid 1px black;
+    position: fixed;
+    background-color: var(--custom-color-main);
+    width: inherit;
+    max-width: 680px;
+    border-top-right-radius: inherit;
+    z-index: 998;
     padding-left: 20px;
 }
-
-
-
-
 
 /* 메인 컨텐츠 */
 .content {
     padding: 20px;
-    overflow: hidden;
+    padding-top: 70px;
+    max-width: 100%;
 }
 .content .mainImg img {
     padding-bottom: 20px;
     max-width: 100%;
+}
+.mainName {
+    font-size: 30px;
 }
 .nameBox {
     height: var(--custom-height-title);
@@ -192,6 +210,7 @@ hr {
     max-height: 500px;
     margin-left: 100px;
 }
+
 .npcAbilities .icon {
     border-radius: 15%;
 }
