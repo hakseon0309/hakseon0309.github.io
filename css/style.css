@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
 :root {
     /* 메인 팔레트 */
     --custom-color-bbg : #151515;
@@ -38,6 +41,7 @@
 body {
     background: var(--custom-color-bbg);
     color : var(--custom-color-font);
+    font-family: 'Noto Sans KR', sans-serif;
 }
 hr {
     width: 90%;
@@ -67,9 +71,10 @@ hr {
     height: var(--custom-height-header);
     line-height: var(--custom-height-header);
     width: 100%;
+    font-family: 'Dongle', sans-serif;
 
     color: var(--custom-color-sub);
-    font-size: 14px;
+    font-size: 24px;
     font-weight: bold;
     
     position: sticky;
@@ -77,6 +82,7 @@ hr {
     z-index: 1000;
     
     padding-left: 7px;
+    padding-top: 2px;
 }
 
 /* 메인 페이지 */
@@ -180,6 +186,7 @@ hr {
     border-radius: 15px;
     background-color: #1e1f22;
     padding: 20px;
+    margin: 20px;
 }
 .enemyOutline .name {
     font-size: 24px;
