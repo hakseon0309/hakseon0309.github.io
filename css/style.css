@@ -122,6 +122,7 @@ hr {
     height: 50px;
     position: sticky;
     top: 25px;
+    border-top-left-radius: 7px;
 }
 .banner {
 
@@ -155,8 +156,6 @@ hr {
     object-fit: cover;
     /* background-size: cover; */
     overflow-x: hidden;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 .__post .title {
     height: var(--custom-height-title);
