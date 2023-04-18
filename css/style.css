@@ -34,6 +34,9 @@
 
     --custom-header-height : 24px;
     --custom-post-title-height : 48px;
+
+    --custom-main-margin : 10px;
+    --custom-main-padding : 10px;
 }
 
 body {
@@ -68,9 +71,6 @@ body {
     padding-left: 7px;
     padding-top: 2px;
 }
-._characterList{
-    width: 75px;
-}
 ._sideBar {
     background-color: var(--custom-color-sideBar);
     width: var(--custom-sideBar-width);
@@ -85,7 +85,7 @@ body {
 }
 .profile {
     background-color: #212121;
-    margin: 10px;
+    margin: var(--custom-main-margin);
     height: 100px;
     border-radius: 10px;
     display: flex;
@@ -107,8 +107,9 @@ body {
 }
 .category {
     background-color: #212121;
-    margin: 10px;
+    margin: var(--custom-main-margin);
     border-radius: 10px;
+    font-size: 0.85em;
 }
 .list-group-item {
     background-color: var(--custom-color-clear);
@@ -130,29 +131,27 @@ body {
     padding-left: 15px;
 }
 .content {
-    padding: 20px;
-    padding-top: calc(20px + var(--custom-post-title-height));
+    padding: var(--custom-main-padding);
+    padding-top: calc(var(--custom-main-padding) + var(--custom-post-title-height));
 }
 .content img {
     max-width: 100%;
 }
 
-.enemyOutline {
-    border: 1px solid #000;
-    border-radius: 15px;
-    background-color: #1e1f22;
-    /* padding: 20px; */
-    /* margin: 20px; */
-}
-.enemyOutline .name {
-    font-size: 24px;
-}
 
 
-.nameBox {
-    height: var(--custom-height-title);
-    line-height: var(--custom-height-title);
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .npcAbilities {
     border: 1px solid black;
@@ -163,6 +162,32 @@ body {
     max-height: 500px;
     position: relative;
 }
+.npcAbilities .icon {
+    margin-right: 15px;
+    border-radius: 15%;
+}
+.npcAbilities .name {
+    color: moccasin;
+}
+.npcAbilities .sub {
+    font-size: 0.75em;
+    color: rgb(73, 73, 73);
+}
+.npcAbilities .gif {
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.npcAbilities .description {
+    padding-right: 220px;
+}
+.card {
+    background-color: var(--custom-color-bbg);
+}
+
+
 ._md {
     min-width: 450px;
     min-height: 220px;
@@ -176,18 +201,4 @@ body {
     max-width: 650px;
     max-height: 500px;
     margin-left: 100px;
-}
-
-.npcAbilities .icon {
-    border-radius: 15%;
-}
-.npcAbilities .gif {
-    width: 200px;
-    border-radius: 10px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-.npcAbilities .description {
-    padding-right: 220px;
 }
