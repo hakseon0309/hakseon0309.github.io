@@ -24,10 +24,13 @@
     --custom-wow-color-mage         :#69ccf0;
     --custom-wow-color-warlock      :#9482c9;
 
-    --custom-min-width : 390px;
+    --custom-min-width : 500px;
     --custom-max-width : 956px;
     --custom-min-height : 500px;
     --custom-max-height : 956px;
+    --custom-max-width-post : calc(var(--custom-max-width)
+                                - var(--custom-sideBar-width)
+                                - 10px);
 
     --custom-characterList-width : 75px;
     --custom-sideBar-width : 200px;
@@ -45,12 +48,11 @@ body {
     color : var(--custom-color-font);
     font-family: 'Noto Sans KR', sans-serif;
 }
-.container-fluid {
+.page {
     background-color: var(--custom-color-bg);
     min-width: var(--custom-min-width);
     max-width: var(--custom-max-width);
     min-height: var(--custom-min-height);
-    margin: 0px;
     padding: 0px;
 }
 .row {
@@ -137,68 +139,52 @@ body {
 .content img {
     max-width: 100%;
 }
+.content .mainImg {
+    margin-bottom: 10px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.npcAbilities {
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: #161616;
+/* 네임드 능력 모듈 1 start */
+.npcAbility {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-radius: 15px;
+    background-color: #121212;
     padding: 20px;
-    min-height: 220px;
-    max-height: 500px;
-    position: relative;
+    height: 240px;
 }
-.npcAbilities .icon {
-    margin-right: 15px;
-    border-radius: 15%;
+.npcAbility .left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
 }
-.npcAbilities .name {
-    color: moccasin;
+.npcAbility .left .ability {
+    display: flex;
+    margin-bottom: 20px;
 }
-.npcAbilities .sub {
+.npcAbility .left .ability .icon {
+    border-radius: 20%;
+    margin-right: 20px;
+}
+.npcAbility .left .ability .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.npcAbility .left .ability .name {
+    color:wheat;
+}
+.npcAbility .left .ability .subName {
     font-size: 0.75em;
-    color: rgb(73, 73, 73);
+    color:#545454;
 }
-.npcAbilities .gif {
-    width: 200px;
+.npcAbility .left .description {
+    background-color: #171717;
     border-radius: 10px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    height: 100%;
+    padding: 10px;
 }
-.npcAbilities .description {
-    padding-right: 220px;
+.npcAbility .right .gif {
+    width: 200px;
 }
-.card {
-    background-color: var(--custom-color-bbg);
-}
-
-
-._md {
-    min-width: 450px;
-    min-height: 220px;
-    max-width: 700px;
-    max-height: 500px;
-    margin-left: 50px;
-}
-._sm {
-    min-width: 400px;
-    min-height: 220px;
-    max-width: 650px;
-    max-height: 500px;
-    margin-left: 100px;
-}
+/* 네임드 능력 모듈 1 end */
