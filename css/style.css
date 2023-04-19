@@ -127,7 +127,7 @@ aside {
 .profile .icon {
     width: 50px;
     height: 50px;
-    margin-right: 10px;
+    margin-right: 20px;
     border-radius: 25%;
 }
 .profile .character {
@@ -152,7 +152,9 @@ aside {
     color: var(--hc-color-font);
 }
 .hc-post {
-
+    display: none;
+    max-width: 756px;
+    overflow: hidden;
 }
 ._hc-post .title {
     background-color: var(--hc-color-post);
@@ -168,6 +170,9 @@ aside {
     background-color: var(--hc-color-post);
     min-height: 1000px;
     padding: 10px;
+}
+._hc-post .content img {
+    max-width: 100%;
 }
 
 
