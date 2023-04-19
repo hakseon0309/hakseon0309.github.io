@@ -48,7 +48,7 @@ customElements.define('npcability-nm', npcAbility);
 
 
 
-class kazzara extends HTMLElement {
+class qwe extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <div class="title">
@@ -142,7 +142,7 @@ class kazzara extends HTMLElement {
     `;
   }
 }
-customElements.define('kazzara-heroic', kazzara);
+customElements.define('kazzara-heroic', qwe);
 
 class rayout extends HTMLElement {
   connectedCallback() {
