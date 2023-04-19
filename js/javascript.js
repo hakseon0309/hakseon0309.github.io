@@ -1,69 +1,257 @@
-카자라_일반_설명 =
-'넬타리온 본인은 한참 나중에 가서야 사용했지만, 사실 엘레멘티움 장갑 실험은 아베루스 초창기부터 이루어졌습니다. 엘레멘티움과 암흑불길을 접목한 결과물이 바로 카자라로, 풀어놓기엔 너무 불안정하다고 판단되어 갇히고 말았습니다. 엘레멘티움 장갑의 끔찍한 고통에 이성을 상실한 그녀는 어둠의 도가니를 지키는 수호자로서 역할을 다할 뿐입니다.'
-
-카자라_일반_개요 =
-'전투가 진행되면서 카자라는 [공포의 균열]을 열어 [고뇌의 광선]을 형성해 플레이어를 추적합니다. 생명력이 80%, 60%, 40% 이하로 떨어지면 [지옥강철 학살]의 지속시간 동안 카자라의 위협적인 방어구 철판이 떨어져 나가며, [지옥불 심장]이 격렬해 집니다.'
-
-카자라_일반_공격_담당_ =
-'[고뇌의 광선]은 [공포의 균열]에 흡수될 때까지 플레이어를 추적하며 [타오르는 흉터]를 남깁니다.',
-'기력이 100에 도달하면 [지옥 광선]이 방출되어 효과 범위 내의 대상에게 가공할 피해를 입힙니다.'
-
-카자라_일반_치유_담당 =
-'[고뇌의 광선]은 [공포의 균열]에 흡수될 때까지 플레이어를 추적하며 [타오르는 흉터]를 남깁니다.',
-'[멸종의 날개]와 [지옥불 심장]은 공격대 전체에 막대한 피해를 입힙니다.'
-
-카자라_일반_방어_담당 =
-'[공포의 발톱]은 막대한 피해를 입히며, 공포의 발톱으로 받는 피해를 증가시킵니다.',
-'기력이 100에 도달하면 [지옥 광선]이 방출되어 효과 범위 내의 대상에게 가공할 피해를 입힙니다.'
-
-// 중요
-카자라_일반_지옥강철_학살 =
-'강력한 엘레멘티움 철판이 카자라의 불안정한 핵의 붕괴하지 않도록 지탱하고 있습니다. 생명력이 80%, 60%, 40% 이하로 떨어지면 방어구 일부가 떨어져 나가고 지옥강철 파편을 발동시킵니다. 재앙적인 폭발은 모든 플레이어에게 67,531의 암흑불길 피해를 입힙니다.'
-
-// 치유 전담 주의
-카자라_일반_지옥강철_학살_지옥불_심장 =
-'카자라의 노출된 핵이 타오르는 심장으로 맥동하여, 모든 플레이어에게 4초마다 18,008의 암흑불길 피해를 입힙니다. 카자라가 방어구를 추가로 잃을수록 주기가 빨라집니다.'
-카자라_일반_지옥강철_학살_지옥강철_파편 =
-'카자라의 방어구가 불타는 쇳조각으로 산산이 조각나, 충격 지점 4미터 내에 112,551의 암흑불길 피해를 입힙니다.'
-카자라_일반_지옥강철_학살_망령의_피 =
-'카자라의 끔찍한 상처에서 혈액 덩어리가 쏟아져 나옵니다. 각 덩어리는 낙하 지점 3미터 내에 90,041의 암흑불길 피해를 입힙니다.'
-
-카자라_일반_공포의_균열 =
-'카자라가 맹렬한 포효를 내질러 다수의 플레이어의 내면에 있는 불타는 징표를 일깨웁니다. 5초 후에 대상 플레이어의 발밑에 이계의 균열이 열리고, 휘몰아치는 공포의 불꽃이 일어나 5미터 내에 78,786의 암흑불길 피해를 입힙니다. 카자라의 노출된 핵은 떨어져 나간 방어구 조각 하나당 공포의 균열이 추가 플레이어를 대상으로 지정하도록 만듭니다.'
-카자라_일반_공포의_균열_균열_화상 =
-'공포의 균열에 작열하는 열기가 효과 안에 서 있는 플레이어에게 1초마다 45,015의 암흑불길 피해를 입힙니다.'
-카자라_일반_공포의_균열_타오르는_흉터 =
-'그을린 바닥 안에 서 있는 플레이어에게 1초마다 40,542의 암흑불길 피해를 입힙니다.'
-
-카자라_일반_고뇌의_광선 =
-'카자라가 공포의 균열에서 이글거리는 마력의 파편을 소환합니다. 각 파편은 고열의 광선을 방출하여 주위 플레이어를 추적하고, 지나간 자리에 타오르는 흉터를 남깁니다. 광선과 접촉하면 0.3초마다 56,275의 암흑불길 피해를 받습니다.'
-카자라_일반_고뇌의_광선_타오르는_흉터 =
-'그을린 바닥 안에 서 있는 플레이어에게 1초마다 40,542의 암흑불길 피해를 입힙니다.'
-
-// 치명적
-카자라_지옥_광선 =
-'에너지가 100에 도달하면 카자라는 턱에서 무시무시한 힘의 광선을 방출하여 안에 있는 모든 플레이어에게 3초 동안 0.3초마다 187334의 암흑 화염 피해를 입힙니다. Kazzara는 갑옷이 산산조각이 나면서 점점 더 많은 양의 Revenants Blood를 토해냅니다.'
-
-// 치유 전담 주의
-카자라_멸종의_날개 =
-'카자라가 이글거리는 날개를 펄력여 모든 플레이어에게 56275의 암흑불길 피해를 입히고 뒤로 밀쳐냅니다. 불꽃은 남아 20초 동안 2초마다 13480의 추가 암흑불길 피해를 입힙니다.'
-
-// 방어 전담 주의
-카자라_공포의_발톱 =
-'카자라가 대상을 베어 337653의 물리 피해와 112551의 암흑불길 피해를 입힙니다. 새까맣게 타버린 상처는 1초마다 27055의 암흑불길 피해를 입히고 25초 동안 공포의 발톱으로 받는 피해를 추가로 200%만큼 증가시킵니다.'
-
-
-
-function kazzara() {
-  let postTitle = document.getElementById('postTitle');
-  let mainImg = document.getElementById('mainImg');
-  let bigName = document.getElementById('bigName');
-  let story = document.getElementById('story');
-  let summary = document.getElementById('summary');
-
-  postTitle.innerHTML = '지옥벼림 카자라';
-  mainImg.addEventListener('load', () => {Image.src = 'img/kazzara-mythic-dps-rankings-10.1-768x432.webp'});
-  bigName.innerHTML = '지옥벼림 카자라';
-  story.innerHTML = 카자라_일반_설명;
-  summary.innerHTML = 카자라_일반_개요;
+class npcAbility extends HTMLElement {
+  connectedCallback() {
+    let _spellId = this.getAttribute('_spellId')
+    let _name = this.getAttribute('_name')
+    let _enName = this.getAttribute('_enName')
+    let _feature = this.getAttribute('_feature')
+    let _dmgType = this.getAttribute('_dmgType')
+    let _iconUrl = this.getAttribute('_iconUrl')
+    let _gifUrl = this.getAttribute('_gifUrl')
+    let _desc = this.getAttribute('_desc')
+    this.innerHTML = `
+    <div class="npcAbility">
+        <div class="left">
+            <div class="ability">
+                <img class="icon" src="
+                  ${_iconUrl}
+                " alt="">
+                <div class="text">
+                    <div class="name">
+                      ${_name}
+                    </div>
+                    <div class="enName">
+                      ${_enName}
+                    </div>
+                </div>
+                <div class="feature d-none d-md-block">
+                    <div>${_feature}</div>
+                    <div>${_dmgType}</div>
+                    <div>${_spellId}</div>
+                </div>
+            </div>
+            <div class="description">
+                <p>
+                  ${_desc}
+                </p>
+            </div>
+        </div>
+        <div class="right">
+            <img class="gif" src="
+              ${_gifUrl}
+            " alt="">
+        </div>                        
+    </div>
+    `;
+  }
 }
+customElements.define('npcability-nm', npcAbility);
+
+
+
+class kazzara extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <div class="title">
+        <i class="fa-regular fa-hashtag" style="color: #a7a7a7;"></i>
+        지옥벼림 카자라
+    </div>
+    <div class="content">
+      <div class="mainImg text-center">
+          <!-- IMG Here ! -->
+          <img src="
+          https://wow.zamimg.com/uploads/blog/images/33178-3-31.jpg
+          " alt="">
+      </div>
+    <npcAbility-nm
+    _spellId="401319"
+    _name="지옥강철 학살"
+    _enName="Hellsteel Carnage"
+    _feature="중요"
+    _dmgType="Shadowflame"
+    _iconUrl="https://wow.zamimg.com/images/wow/icons/large/achievment_boss_spineofdeathwing.jpg"
+    _gifUrl="img/wow/gifs/지옥강철 학살.gif"
+    _desc="생명력이 80%, 60%, 40% 이하로 떨어지면 지옥강철 파편 발동, 모든 플레이어에게 122682 / 164217 암흑불길 피해"
+    ></npcAbility-nm>
+
+    <npcAbility-nm
+    _spellId="408367"
+    _name="지옥불 심장"
+    _enName="Infernal Heart"
+    _feature="치유 담당 주의"
+    _dmgType="Shadowflame"
+    _iconUrl="https://wow.zamimg.com/images/wow/icons/large/inv_ragnaros_heart.jpg"
+    _gifUrl=""
+    _desc="모든 플레이어에게 4초마다 40813 / 60213 암흑불길 피해
+    지옥강철 학살 볼 때마다 주기 짧아짐"
+    ></npcAbility-nm>
+
+    <npcAbility-nm
+    _spellId="407196"
+    _name="공포의 균열"
+    _enName="Dread Rifts"
+    _feature=""
+    _dmgType="Shadowflame"
+    _iconUrl="https://wow.zamimg.com/images/wow/icons/large/inv_shadowflame_groundstate.jpg"
+    _gifUrl=""
+    _desc="5초 후 원형 바닥 생성, 지옥강철 학살마다 더 많은 대상 지정"
+    ></npcAbility-nm>
+
+    <npcAbility-nm
+    _spellId="407069"
+    _name="고뇌의 광선"
+    _enName="Rays of Anguish"
+    _feature="영웅 난이도 추가"
+    _dmgType="Shadowflame"
+    _iconUrl="https://wow.zamimg.com/images/wow/icons/large/ability_mage_firestarter.jpg"
+    _gifUrl=""
+    _desc="공포의 균열로부터 나오는 추적 레이저, 지나간 자리에 바닥, 공포의 균열로 유도해서 없애기, 영웅 난이도는 빨리 안없애면 공대피해"
+    ></npcAbility-nm>
+
+    <npcAbility-nm
+    _spellId="400430"
+    _name="지옥 광선"
+    _enName="Hellbeam"
+    _feature="치명적"
+    _dmgType="Shadowflame"
+    _iconUrl="https://wow.zamimg.com/images/wow/icons/large/ability_warlock_shadowflame.jpg"
+    _gifUrl=""
+    _desc="기력 100때 전방 브레스, 동시에 공대 피해도 옴"
+    ></npcAbility-nm>
+
+    <npcAbility-nm
+    _spellId="403326"
+    _name="멸종의 날개"
+    _enName="Wings of Extinction"
+    _feature="치유 담당 주의"
+    _dmgType="Shadowflame"
+    _iconUrl="https://wow.zamimg.com/images/wow/icons/large/inv_icon_wingbroken07d.jpg"
+    _gifUrl=""
+    _desc="공대피해주고 20초동안 2초마다 전원 디버프 부여"
+    ></npcAbility-nm>
+
+    <npcAbility-nm
+    _spellId="404744"
+    _name="공포의 발톱"
+    _enName="Terror Claws"
+    _feature="방어 담당 주의"
+    _dmgType="Physical + Shadowflame"
+    _iconUrl="https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalshardfoozles_shadowflame.jpg"
+    _gifUrl=""
+    _desc="탱커 강한 피해, 25초동안 1초마다 데미지, 다음 중첩땐 200% 더 강하게 받음"
+    ></npcAbility-nm>
+    `;
+  }
+}
+customElements.define('kazzara-heroic', kazzara);
+
+class rayout extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <div class="banner">
+    <img src="img/1839787544b35f811.gif" alt="">
+</div>
+<div class="profile">
+    <div class="d-flex justify-content-center align-items-center">
+        <img class="icon" src="https://wow.zamimg.com/images/wow/icons/large/inv_pet_cats_siamesecat.jpg" alt="">
+        <div>
+            <div class="character">
+                학선양
+            </div>
+            <div class="server">
+                KR-Azshara
+            </div>
+        </div>                        
+    </div>
+</div>
+<div class="category">
+    <ul class="list-group">
+        <li class="list-group-item">
+            지옥벼림 카자라
+            <span class="position-absolute top-0 start-0 translate-middle badge rounded bg-primary">
+            10.1
+            </span>
+            <a class="badge bg-secondary ms-1" href="#">New</a></li>
+        <li class="list-group-item">융합체의 방</li>
+        <li class="list-group-item">잊힌 실험체</li>
+        <li class="list-group-item">자칼리의 습격</li>
+        <li class="list-group-item">장로 라소크</li>
+        <li class="list-group-item">경계하는 청지기 지스카른</li>
+        <li class="list-group-item">마그모라</li>
+        <li class="list-group-item">넬타리온의 메아리</li>
+        <li class="list-group-item">비늘사령관 사카레스</li>
+    </ul>
+</div>
+    `;
+  }
+}
+customElements.define('main-layout', rayout);
+
+class _header extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <header>HAKSEON LAB - WLB 10.1</header>
+    `;
+  }
+}
+customElements.define('custom-header', _header);
+
+
+
+class test extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <header>HAKSEON LAB - WLB 10.1</header>
+    <div class="_hc-container">
+        <aside>
+            <img class="banner" src="img/1839787544b35f811.gif" alt="">
+            <div class="profile">
+                <div class="background">
+                    <img class="icon" src="https://wow.zamimg.com/images/wow/icons/large/inv_pet_cats_siamesecat.jpg" alt="">
+                    <div>
+                        <div class="character">
+                            학선양
+                        </div>
+                        <div class="server">
+                            KR-Azshara
+                        </div>
+                    </div>    
+                </div>                      
+            </div>
+            <div class="pad"></div>
+            <div class="category">
+                <div class="background">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            지옥벼림 카자라
+                            <span class="position-absolute top-0 start-0 translate-middle badge rounded bg-primary">
+                                10.1
+                            </span>
+                            <a class="badge bg-secondary ms-1" href="#">
+                                New
+                            </a>
+                        </li>
+                        <li class="list-group-item">융합체의 방</li>
+                        <li class="list-group-item">잊힌 실험체</li>
+                        <li class="list-group-item">자칼리의 습격</li>
+                        <li class="list-group-item">장로 라소크</li>
+                        <li class="list-group-item">경계하는 청지기 지스카른</li>
+                        <li class="list-group-item">마그모라</li>
+                        <li class="list-group-item">넬타리온의 메아리</li>
+                        <li class="list-group-item">비늘사령관 사카레스</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <div class="_hc-post">
+            <div class="title">
+                여기에 제목을 입력하세요.                
+            </div>
+            <div class="content">
+                여기에 내용을 입력하세요.
+            </div>
+        </div>
+    </div>
+    `;
+  }
+}
+customElements.define('test-test', test);

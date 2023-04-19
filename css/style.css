@@ -1,147 +1,183 @@
-/* Fonts */
+/* Fonts [Start] */
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+/* Fonts [End] */
+
+
+/* Global [Start] */
 :root {
-    --custom-color-bbg              :#121212;
-    --custom-color-bg               :#1e1f22;
-    --custom-color-sideBar          :#2b2d31;
-    --custom-color-main             :#313338;
-    --custom-color-clear            :#00000000;
-    --custom-color-font             :#cacaca;
-    --custom-color-sub              :#a7a7a780;
+    --hc-color-bbg              :#1b1c1f;   /* 18 18 18 */
+    --hc-color-bg               :#1e1f22;   /* 30 31 34 */
+    --hc-color-sideBar          :#2b2d31;   /* 43 45 49 */
+    --hc-color-post             :#313338;   /* 49 51 56 */
+    --hc-color-clear            :#00000000;
+    --hc-color-font             :#cacaca;
+    --hc-color-sub              :#a7a7a780;
 
-    --custom-wow-color-warrior      :#c79c6e;
-    --custom-wow-color-paladin      :#f58cba;
-    --custom-wow-color-deathKnight  :#c41f3b;
-    --custom-wow-color-hunter       :#abd473;
-    --custom-wow-color-shaman       :#0070de;
-    --custom-wow-color-evoker       :#33937F;
-    --custom-wow-color-rogue        :#fff569;
-    --custom-wow-color-druid        :#ff7d0a;
-    --custom-wow-color-monk         :#00ff96;
-    --custom-wow-color-demonHunter  :#a330c9;
-    --custom-wow-color-priest       :#ffffff;
-    --custom-wow-color-mage         :#69ccf0;
-    --custom-wow-color-warlock      :#9482c9;
+    --hc-wow-color-warrior      :#c79c6e;
+    --hc-wow-color-paladin      :#f58cba;
+    --hc-wow-color-deathKnight  :#c41f3b;
+    --hc-wow-color-hunter       :#abd473;
+    --hc-wow-color-shaman       :#0070de;
+    --hc-wow-color-evoker       :#33937F;
+    --hc-wow-color-rogue        :#fff569;
+    --hc-wow-color-druid        :#ff7d0a;
+    --hc-wow-color-monk         :#00ff96;
+    --hc-wow-color-demonHunter  :#a330c9;
+    --hc-wow-color-priest       :#ffffff;
+    --hc-wow-color-mage         :#69ccf0;
+    --hc-wow-color-warlock      :#9482c9;
 
-    --custom-min-width : 500px;
-    --custom-max-width : 956px;
-    --custom-min-height : 500px;
-    --custom-max-height : 956px;
-    --custom-max-width-post : calc(var(--custom-max-width)
-                                - var(--custom-sideBar-width)
-                                - 10px);
+    --hc-min-width : 500px;
+    --hc-max-width : 956px;
+    --hc-min-height : 500px;
+    --hc-max-height : 956px;
 
-    --custom-characterList-width : 75px;
-    --custom-sideBar-width : 200px;
+    --hc-width-characterList : 75px;
+    --hc-width-sideBar : 200px;
 
-    --custom-header-height : 24px;
-    --custom-post-title-height : 48px;
+    --hc-height-header : 24px;
+    --hc-post-title-height : 48px;
 
-    --custom-main-margin : 10px;
-    --custom-main-padding : 10px;
 }
 
+/* Global [End] */
+
+
+
+/* Selector - Tag [Start] */
+html {
+    font-size: 16px;
+}
 body {
-    background-color: var(--custom-color-bbg);
-    font-size: 1em;
-    color : var(--custom-color-font);
+    background-color: var(--hc-color-bg);
+    color : var(--hc-color-font);
     font-family: 'Noto Sans KR', sans-serif;
 }
-.page {
-    background-color: var(--custom-color-bg);
-    min-width: var(--custom-min-width);
-    max-width: var(--custom-max-width);
-    min-height: var(--custom-min-height);
-    padding: 0px;
-}
-.row {
-    margin: 0px;
-    padding: 0px;
-}
-._header {
-    background-color: var(--custom-color-bg);
-    max-width: var(--custom-max-width);
-    height: var(--custom-header-height);
-    line-height: var(--custom-header-height);
-    font-family: 'Dongle', sans-serif;
-    font-size: 1.5em;
-    color: var(--custom-color-sub);    
+header {
+    background-color: var(--hc-color-bg);
+    width: 100%;
+    max-width: var(--hc-max-width);
+    height: var(--hc-height-header);
+    line-height: var(--hc-height-header);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2px;
+    padding-left: 6px;
     position: sticky;
     top: 0px;
-    z-index: 100;    
-    padding-left: 7px;
-    padding-top: 2px;
+    z-index: 100;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.4rem;
 }
-._sideBar {
-    background-color: var(--custom-color-sideBar);
-    width: var(--custom-sideBar-width);
-    max-height: calc(var(--custom-max-height) - var(--custom-header-height));
+aside {
+    background-color: var(--hc-color-sideBar);
+    width: 100%;
+    height: 900px;
+    max-height: var(--hc-max-height);
     position: sticky;
-    top: var(--custom-header-height);
+    top: var(--hc-height-header);
+    overflow: hidden;
+    z-index: 90;
+    border-bottom-left-radius: 10px;
 }
 
-.banner img {
-    max-width: 100%;
-    max-height: 100%;
+/* Selector - Tag [End] */
+
+
+
+/* Selector - Utility [Start] */
+.pad {
+    padding-bottom: 10px;
+}
+
+/* Selector - Utility [End] */
+
+
+
+/* Selector - Class [Start] */
+._hc-container {
+    background-color: var(--hc-color-bg);
+    width: 100%;
+    max-width: 956px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+.banner {
+    width: 100%;
 }
 .profile {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+.profile .background{
     background-color: #212121;
-    margin: var(--custom-main-margin);
+    width: 100%;
     height: 100px;
     border-radius: 10px;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 .profile .icon {
-    padding-right: 15px;
-}
-.profile img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
     border-radius: 25%;
 }
-.character {
+.profile .character {
     font-weight: bold;
-    color: var(--custom-wow-color-monk);
+    color: var(--hc-wow-color-monk);
 }
-.server {
-    font-size: 0.75em;
-    color: var(--custom-color-sub);
+.profile .server {
+    font-size: 0.75rem;
+    color: var(--hc-color-sub);
 }
 .category {
+    font-size: 0.85rem;
+    padding: 10px;
+}
+.category .background {
     background-color: #212121;
-    margin: var(--custom-main-margin);
+    width: 100%;
     border-radius: 10px;
-    font-size: 0.85em;
 }
 .list-group-item {
-    background-color: var(--custom-color-clear);
-    color: var(--custom-color-font);
+    background-color: var(--hc-color-clear);
+    color: var(--hc-color-font);
 }
-._post {
-    background-color: var(--custom-color-main);
-    object-fit: cover;
-    background-size: cover;
+.hc-post {
+
 }
-.title {
-    background-color: var(--custom-color-sideBar);
-    height: var(--custom-post-title-height);
-    line-height: var(--custom-post-title-height);
-    width: 100%;
-    max-width: calc(var(--custom-max-width) - var(--custom-sideBar-width));
-    position: fixed;
+._hc-post .title {
+    background-color: var(--hc-color-post);
+    height: var(--hc-post-title-height);
+    line-height: var(--hc-post-title-height);
+    border-bottom: 1px solid var(--hc-color-bbg);
+    padding-left: 10px;
+    position: sticky;
+    top: var(--hc-height-header);
     z-index: 90;
-    padding-left: 15px;
 }
-.content {
-    padding: var(--custom-main-padding);
-    padding-top: calc(var(--custom-main-padding) + var(--custom-post-title-height));
+._hc-post .content {
+    background-color: var(--hc-color-post);
+    min-height: 1000px;
+    padding: 10px;
 }
-.content img {
-    max-width: 100%;
-}
-.content .mainImg {
-    margin-bottom: 10px;
-}
+
+
+
+
+
+
+
+
+
 
 
 /* 네임드 능력 모듈 1 start */
@@ -152,6 +188,7 @@ body {
     background-color: #121212;
     padding: 20px;
     height: 240px;
+    margin-bottom: 10px;
 }
 .npcAbility .left {
     display: flex;
@@ -161,8 +198,12 @@ body {
 .npcAbility .left .ability {
     display: flex;
     margin-bottom: 20px;
+    align-items: center;
 }
 .npcAbility .left .ability .icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
     border-radius: 20%;
     margin-right: 20px;
 }
@@ -170,11 +211,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 20px;
 }
 .npcAbility .left .ability .name {
     color:wheat;
 }
-.npcAbility .left .ability .subName {
+.npcAbility .left .ability .enName {
     font-size: 0.75em;
     color:#545454;
 }
@@ -185,6 +227,8 @@ body {
     padding: 10px;
 }
 .npcAbility .right .gif {
+    border-radius: 10px;
     width: 200px;
 }
 /* 네임드 능력 모듈 1 end */
+
